@@ -123,7 +123,8 @@ const Header = () => {
               ) : (
                 <button
                   type='button'
-                  className='w-full shrink-0 place-items-center rounded-lg bg-white p-2.5 text-gray-700 shadow-sm hover:text-white hover:bg-green-500  flex items-center gap-2'
+                  onClick={handleLogin}
+                  className='flex items-center gap-2 w-full shrink-0 place-items-center rounded-lg bg-white p-2.5 text-gray-700 shadow-sm hover:text-white hover:bg-green-500  '
                 >
                   <HiOutlineLogin className='w-5 h-5' />
                   <span> Login</span>

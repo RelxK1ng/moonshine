@@ -1,6 +1,7 @@
 import { useRoutes } from 'react-router-dom'
 import Login from './pages/Login'
 import './index.css'
+import 'react-toastify/dist/ReactToastify.css'
 import Signup from './pages/Signup'
 import Home from './pages/Home'
 import Notfond from './pages/Notfond'

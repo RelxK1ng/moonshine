@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { signup } from '../actions/auth'
-
+import { ToastContainer } from 'react-toastify'
 const Signup = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -218,6 +218,7 @@ const Signup = () => {
           </main>
         </div>
       </section>
+      <ToastContainer />
     </>
   )
 }

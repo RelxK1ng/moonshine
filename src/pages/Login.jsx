@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { signin } from '../actions/auth'
-
+import { ToastContainer } from 'react-toastify'
 const Login = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -18,9 +18,12 @@ const Login = () => {
   }
   const handleFormSubmit = (e) => {
     e.preventDefault()
-    dispatch(signin(formValue, navigate))
+    try {
+      dispatch(signin(formValue, navigate))
+    } catch (error) {
+      toast.error(error.message)
+    }
   }
-
   return (
     <>
       <div className='flex flex-wrap w-full'>
@@ -111,6 +114,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </>
   )
 }

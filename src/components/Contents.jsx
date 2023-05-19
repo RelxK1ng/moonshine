@@ -56,7 +56,7 @@ const Contents = () => {
                   type='date'
                   id='taskDate'
                   placeholder='Input a new date'
-                  className='w-full h-8 p-0 text-center placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm'
+                  className='w-full h-8 p-0 placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm'
                 />
                 <span className='absolute text-xs text-left text-gray-700 transition-all -translate-y-1/2 start-3 top-3 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs'>
                   DateTime

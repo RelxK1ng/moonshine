@@ -7,9 +7,10 @@ import Home from './pages/Home'
 import Notfond from './pages/Notfond'
 function App() {
   const routeElement = useRoutes([
-    { path: 'login', element: <Login /> },
-    { path: 'signup', element: <Signup /> },
-    { path: 'home', element: <Home /> },
+    { path: '/login', element: <Login /> },
+    { path: '/signup', element: <Signup /> },
+    { path: '/', element: <Home /> },
+    { path: '/home', element: <Home /> },
     { path: '/*', element: <Notfond /> }
   ])
   return routeElement

@@ -37,7 +37,7 @@ const Header = () => {
   }, [user?.token, handleLogout, profile])
 
   return (
-    <header aria-label='Page Header' className='bg-gray-50'>
+    <header aria-label='Page Header' className='bg-slate-50'>
       <div className='max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8'>
         <div className='flex items-center sm:justify-between sm:gap-4'>
           <div className='relative hidden sm:block'>
@@ -124,7 +124,7 @@ const Header = () => {
                 <button
                   type='button'
                   onClick={handleLogin}
-                  className='flex items-center gap-2 w-full shrink-0 place-items-center rounded-lg bg-white p-2.5 text-gray-700 shadow-sm hover:text-white hover:bg-green-500  '
+                  className='flex items-center gap-2 w-full shrink-0 place-items-center rounded-lg bg-white p-2.5 text-gray-700 shadow-sm hover:text-white hover:bg-black'
                 >
                   <HiOutlineLogin className='w-5 h-5' />
                   <span> Login</span>

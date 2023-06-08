@@ -1,1 +1,5 @@
-/*    Content-Encoding: br
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Content-Encoding: br

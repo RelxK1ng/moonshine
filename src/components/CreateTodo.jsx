@@ -26,15 +26,17 @@ const CreateTodo = () => {
       className='flex flex-col gap-3 mt-24 rounded-2xl'
     >
       <div className='flex items-center w-full gap-2 m-3'>
-        <div className='block shrink-0 rounded-full bg-black p-2.5 text-gray-600 shadow-sm'>
-          <HiPlusSm className='w-5 h-5 text-white' />
+        <div className='block shrink-0 rounded-full bg-black dark:bg-white p-2.5 text-gray-600 shadow-sm'>
+          <HiPlusSm className='w-5 h-5 text-white dark:text-black' />
         </div>
-        <h2 className='font-medium text-gray-900'>Create A Todo</h2>
+        <h2 className='font-medium text-gray-900 dark:text-white'>
+          Create A Todo
+        </h2>
       </div>
       <div className='flex flex-wrap items-center justify-center pb-8 m-3 mt-6 gap-7 md:flex'>
         <label
           htmlFor='Task'
-          className='relative block w-full px-1 pt-4 overflow-hidden border border-gray-200 rounded-md shadow-sm focus-within:border-black focus-within:ring-1 focus-within:ring-black'
+          className='relative block w-full px-1 pt-4 overflow-hidden border border-gray-200 rounded-md shadow-sm dark:border-white focus-within:border-black focus-within:ring-1 focus-within:ring-black'
         >
           <input
             type='text'
@@ -45,15 +47,15 @@ const CreateTodo = () => {
             value={note.title}
             onChange={handleChange}
             placeholder='Input a new task'
-            className='w-full p-2 placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm'
+            className='w-full p-2 placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm dark:text-white'
           />
-          <span className='absolute text-xs text-left text-gray-700 transition-all -translate-y-1/2 start-3 top-3 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs'>
+          <span className='absolute text-xs text-left text-gray-700 transition-all -translate-y-1/2 dark:text-white start-3 top-3 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs'>
             Task Name
           </span>
         </label>
         <label
           htmlFor='taskDate'
-          className='relative block w-full px-1 pt-4 overflow-hidden border border-gray-200 rounded-md shadow-sm focus-within:border-black focus-within:ring-1 focus-within:ring-black '
+          className='relative block w-full px-1 pt-4 overflow-hidden border border-gray-200 rounded-md shadow-sm dark:border-white focus-within:border-black focus-within:ring-1 focus-within:ring-black '
         >
           <input
             type='date'
@@ -63,18 +65,18 @@ const CreateTodo = () => {
             value={note.date}
             onChange={handleChange}
             placeholder='Input a new date'
-            className='w-full p-2 placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm'
+            className='w-full p-2 placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm dark:text-white'
           />
-          <span className='absolute text-xs text-left text-gray-700 transition-all -translate-y-1/2 start-3 top-3 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs'>
+          <span className='absolute text-xs text-left text-gray-700 transition-all -translate-y-1/2 dark:text-white start-3 top-3 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs'>
             DateTime
           </span>
         </label>
-        <label className='sr-only' htmlFor='message'>
+        <label className='sr-only dark:border-white ' htmlFor='message'>
           Message
         </label>
 
         <textarea
-          className='w-full p-3 text-sm border-gray-200 rounded-lg'
+          className='w-full p-3 text-sm border-gray-200 rounded-lg dark:border-white dark:focus:border-transparent focus:outline-none'
           placeholder='Input Description...'
           rows='8'
           onChange={handleChange}
@@ -82,7 +84,7 @@ const CreateTodo = () => {
           name='description'
           id='description'
         ></textarea>
-        <button className='inline-block w-full px-8 py-3 text-sm font-medium text-white transition bg-black rounded-3xl hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-white active:text-black md:w-3/4'>
+        <button className='inline-block w-full px-8 py-3 text-sm font-medium text-white transition bg-black rounded-3xl hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-white active:text-black md:w-3/4 dark:text-black dark:bg-white'>
           Create
         </button>
       </div>

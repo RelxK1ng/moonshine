@@ -35,7 +35,7 @@ const Login = () => {
         </div>
         <div className='flex flex-col w-full md:w-1/2'>
           <div className='flex justify-center pt-12 md:justify-start md:pl-12 md:-mb-24'>
-            <a href='#' className='p-4 text-xl font-bold text-white bg-black'>
+            <a href='#' className='p-4 text-xl font-bold text-white bg-black '>
               Moonshine.
             </a>
           </div>
@@ -103,10 +103,15 @@ const Login = () => {
               </button>
             </form>
             <div className='pt-12 pb-12 text-center'>
+              <p className='mt-4 text-sm text-gray-500 sm:mt-0'></p>
               <p className='mt-4 text-sm text-gray-500 sm:mt-0'>
-                Forgot your password?
+                Don't have an account?
+                <Link className='pl-2 font-semibold underline' to='/signup'>
+                  Register
+                </Link>
                 <br />
-                <Link className='font-semibold underline' to='/forgot'>
+                Forgot your password?
+                <Link className='pl-2 font-semibold underline' to='/forgot'>
                   Reset password
                 </Link>
               </p>
